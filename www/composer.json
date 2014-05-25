@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        //TODO should use giggsey/libphonenumber-for-php
         "joegreen0991/phonenumbers": "dev-master"
     }
 }
