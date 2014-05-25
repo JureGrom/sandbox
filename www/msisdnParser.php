@@ -9,9 +9,11 @@
 namespace jureg;
 
 require 'vendor/autoload.php';
+require_once 'jsonRPCServer.php';
 
 use Phonenumbers\PhoneNumberType;
 use Phonenumbers\PhoneNumberUtil;
+use jsonRPCServer;
 
 /*
  * returns MNO identifier, country dialling code, subscriber number and country identifier as defined with ISO 3166-1-alpha-2
@@ -77,4 +79,14 @@ class ParsingResult {
     }
 }
 
-echo json_encode(new ParsingResult("+38651364137"));
+class MSISDNParser
+{
+    public function parse($phoneNumber)
+    {
+        return new ParsingResult($phoneNumber);
+    }
+}
+
+#echo json_encode(new ParsingResult("+38651364137"));
+
+jsonRPCServer::handle(new MSISDNParser());
