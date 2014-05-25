@@ -18,7 +18,7 @@ class ParsingResultTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals(386,$t->cntDiallingCode);
         $this->assertEquals("SI",$t->cntIsoCode);
         $this->assertEquals(51234567,$t->subscriber);
-        $this->assertEquals("mobitel",$t->mnoIdentifier);
+        $this->assertEquals("MOBILE",$t->mnoIdentifier);
     }
 
 
