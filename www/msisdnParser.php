@@ -11,7 +11,6 @@ namespace jureg;
 require 'vendor/autoload.php';
 require_once 'jsonRPCServer.php';
 
-use libphonenumber\PhoneNumberType;
 use libphonenumber\PhoneNumberUtil;
 use libphonenumber\PhoneNumberToCarrierMapper;
 use jsonRPCServer;
