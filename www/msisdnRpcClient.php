@@ -9,4 +9,4 @@ require_once 'jsonRPCClient.php';
 
 $t = new jsonRPCClient('http://localhost/msisdnParser.php');
 
-var_dump($t->parse('+38651364137'));
+var_dump($t->parse('+38651234567'));
