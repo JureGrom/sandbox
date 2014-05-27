@@ -11,7 +11,6 @@ namespace jureg;
 
 class ParsingResultTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testParsing()
     {
         $parsingResult = new ParsingResult("+38651234567");
@@ -21,6 +20,4 @@ class ParsingResultTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(51234567, $parsingResult->subscriber);
         $this->assertEquals("Mobitel", $parsingResult->mnoIdentifier);
     }
-
-
 }
